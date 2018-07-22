@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <style>
+      a{
+        color: black;
+        text-decoration: none;
+      }
+      body{
+        margin: 0;
+      }
+      h1{
+        font-size: 46px;
+        text-align: center;
+        border-bottom: 1px solid #bfbfbf;
+        padding: 20px;
+        margin: 0;
+      }
+      #contents{
+        border-right: 1px solid #bfbfbf;
+        width: 150px;
+        padding: 20px;
+      }
+      #details{
+        padding: 20px;
+        padding-left: 80px;
+      }
+      #grid{
+        display:grid;
+        grid-template-columns: 150px 1fr;
+      }
+      li{
+        font-weight: bold;
+      }
+      #code{
+        border: 1px solid #e6e6e6;
+        padding: 10px;
+      }
+      h3 {
+        border-width:5px;
+        border-color:red;
+        border-style:solid;
+        display:none;
+      }
+      #inline {
+        border-width:5px;
+        border-color:red;
+        border-style:solid;
+        display:block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><a href="index.html">CSS</a></h1>
+    <div id="grid">
+      <div id="contents">
+        <strong>CSS</strong><br>
+          ㄴ <a href="CSSex01.html">Exercise 01</a><br>
+          ㄴ <a href="CSSex02.html">Exercise 02</a><br>
+          ㄴ <a href="CSSex03.html">Exercise 03</a><br><br>
+        <strong>Box Model</strong><br>
+          ㄴ <a href="BOXMODELex01.html">Exercise 01</a><br>
+          ㄴ <a href="BOXMODELex02.html">Exercise 02</a><br>
+          ㄴ <a href="BOXMODELex03.html">Exercise 03</a><br>
+          ㄴ <a href="BOXMODELex04.html">Exercise 04</a><br>
+          ㄴ <a href="BOXMODELex05.html">Exercise 05</a><br>
+          ㄴ <a href="BOXMODELex06.html">Exercise 06</a><br><br>
+        <strong>Grid</strong><br>
+          ㄴ <a href="GRIDex01.html">Exercise 01</a><br><br>
+      </div>
+      <div id="details">
+        <h2>Box Model Exercise 04</h2>
+        <ul>
+          <li>그냥 display:none; 이라고 선언할 수도 있는데, 그럼 화면에서 사라진다.</li><br>
+          <div id="code">
+            h3, a{<br>
+              border:5px red solid;<br>
+            }<br><br>
+            h3 {<br>
+              <span style="font-style:italic"><font color="red">display:none;</font></span><br>
+            }<br>
+          </div><br>
+          <br><br><br>
+          <h3>CSS Box Model</h3>
+          <a href="https://ko.wikipedia.org/wiki/종속형_시트" style="color:blue; text-decoration:underline;" id="inline">CSS</a>(Cascading Style Sheets)는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로, HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
+          <br><br>
+      </div>
+    </div>
+  </body>
+
+</html>

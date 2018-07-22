@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <style>
+      a{
+        color: black;
+        text-decoration: none;
+      }
+      body{
+        margin: 0;
+      }
+      h1{
+        font-size: 46px;
+        text-align: center;
+        border-bottom: 1px solid #bfbfbf;
+        padding: 20px;
+        margin: 0;
+      }
+      #contents{
+        border-right: 1px solid #bfbfbf;
+        width: 150px;
+        padding: 20px;
+      }
+      #details{
+        padding: 20px;
+        padding-left: 80px;
+      }
+      #grid{
+        display:grid;
+        grid-template-columns: 150px 1fr;
+      }
+      li{
+        font-weight: bold;
+      }
+      #code{
+        border: 1px solid #e6e6e6;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><a href="index.html">CSS</a></h1>
+    <div id="grid">
+      <div id="contents">
+        <strong>CSS</strong><br>
+          ㄴ <a href="CSSex01.html">Exercise 01</a><br>
+          ㄴ <a href="CSSex02.html">Exercise 02</a><br>
+          ㄴ <a href="CSSex03.html">Exercise 03</a><br><br>
+        <strong>Box Model</strong><br>
+          ㄴ <a href="BOXMODELex01.html">Exercise 01</a><br>
+          ㄴ <a href="BOXMODELex02.html">Exercise 02</a><br>
+          ㄴ <a href="BOXMODELex03.html">Exercise 03</a><br>
+          ㄴ <a href="BOXMODELex04.html">Exercise 04</a><br>
+          ㄴ <a href="BOXMODELex05.html">Exercise 05</a><br>
+          ㄴ <a href="BOXMODELex06.html">Exercise 06</a><br><br>
+        <strong>Grid</strong><br>
+          ㄴ <a href="GRIDex01.html">Exercise 01</a><br><br>
+      </div>
+      <div id="details">
+        <h2>CSS Exercise 03</h2>
+        <ul>
+          <li>id명 정의하고 스타일 적용하기</li><br>
+            <div id="code">
+              &lt;a href=&quot;Ex03.html&quot; id=&quot;NO1&quot;&gt;Ex03&lt;/a&gt;
+            </div><br>
+            <div id="code">
+              #NO1{<br>
+                color:yellowgreen;<br>
+              }<br>
+            </div><br>
+              >> <font color="yellowgreen">Ex03</font><br><br><br>
+
+            <li>단, class와 id가 둘 다 정의되어있는 경우, id의 우선순위가 높다.</li><br>
+              <div id="code">
+                &lt;li&gt;&lt;a href=&quot;Ex01.html&quot; class=&quot;no1&quot;&gt;Ex01&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;li&gt;&lt;a href=&quot;Ex02.html&quot; id=&quot;NO1&quot;&gt;Ex02&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;li&gt;&lt;a href=&quot;Ex03.html&quot; class=&quot;no1&quot; id=&quot;NO1&quot;&gt;Ex03&lt;/a&gt;&lt;/li&gt;<br>
+              </div><br>
+              <div id="code">
+                .no1{<br>
+                  color:orange;<br>
+                }<br>
+                #NO1{<br>
+                  color:yellowgreen;<br>
+                }<br>
+              </div><br>
+              >> <font color="orange">Ex01</font><br>
+              >> <font color="yellowgreen">Ex02</font><br>
+              >> <font color="yellowgreen">Ex03</font><br>
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <style>
+      a{
+        color: black;
+        text-decoration: none;
+      }
+      body{
+        margin: 0;
+      }
+      h1{
+        font-size: 46px;
+        text-align: center;
+        border-bottom: 1px solid #bfbfbf;
+        padding: 20px;
+        margin: 0;
+      }
+      #contents{
+        border-right: 1px solid #bfbfbf;
+        width: 150px;
+        padding: 20px;
+      }
+      #details{
+        padding: 20px;
+        padding-left: 80px;
+      }
+      #grid{
+        display:grid;
+        grid-template-columns: 150px 1fr;
+      }
+      li{
+        font-weight: bold;
+      }
+      #code{
+        border: 1px solid #e6e6e6;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><a href="index.html">CSS</a></h1>
+    <div id="grid">
+      <div id="contents">
+        <strong>CSS</strong><br>
+          ㄴ <a href="CSSex01.html">Exercise 01</a><br>
+          ㄴ <a href="CSSex02.html">Exercise 02</a><br>
+          ㄴ <a href="CSSex03.html">Exercise 03</a><br><br>
+        <strong>Box Model</strong><br>
+          ㄴ <a href="BOXMODELex01.html">Exercise 01</a><br>
+          ㄴ <a href="BOXMODELex02.html">Exercise 02</a><br>
+          ㄴ <a href="BOXMODELex03.html">Exercise 03</a><br>
+          ㄴ <a href="BOXMODELex04.html">Exercise 04</a><br>
+          ㄴ <a href="BOXMODELex05.html">Exercise 05</a><br>
+          ㄴ <a href="BOXMODELex06.html">Exercise 06</a><br><br>
+        <strong>Grid</strong><br>
+          ㄴ <a href="GRIDex01.html">Exercise 01</a><br><br>
+      </div>
+      <div id="details">
+        <h2>CSS Exercise 01</h2>
+        <ul>
+          <li>h1 태그의 폰트사이즈와 정렬 변경하기</li><br>
+            <div id="code">
+              h1 {<br>
+                font-size: 45px;<br>
+                text-align: center;<br>
+              }<br>
+            </div><br><br>
+
+          <li>a 태그가 걸린 모든 링크의 컬러를 black으로 바꾸고, 언더라인 없애기</li><br>
+            <div id="code">
+              a {<br>
+                color:black;<br>
+                text-decoration: none;<br>
+              }<br>
+            </div><br><br>
+
+          <li>단, 해당되는 a 태그의 html 코드에 직접 스타일을 적용하는 방법이 style 태그 안에 CSS 코드로 작성한 것보다 우선순위가 높다.</li><br>
+            <div id="code">
+            &lt;a href=&quot;Ex01.html&quot; style=&quot;color:orange; text-decoration:underline;&quot;&gt;Ex01&lt;/a&gt;<br>
+            </div><br>
+            >> <a href="Ex01.html" style="color:orange; text-decoration:underline;">Ex01</a><br><br><br>
+
+          <li>CSS의 용어 정리</li>
+        </ul>
+        <img src="CSS_definition.png" alt="definition" width="100%">
+      </div>
+    </div>
+  </body>
+
+</html>

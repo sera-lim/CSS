@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <style>
+      a{
+        color: black;
+        text-decoration: none;
+      }
+      body{
+        margin: 0;
+      }
+      h1{
+        font-size: 46px;
+        text-align: center;
+        border-bottom: 1px solid #bfbfbf;
+        padding: 20px;
+        margin: 0;
+      }
+      #contents{
+        border-right: 1px solid #bfbfbf;
+        width: 150px;
+        padding: 20px;
+      }
+      #details{
+        padding: 20px;
+        padding-left: 80px;
+      }
+      #grid{
+        display:grid;
+        grid-template-columns: 150px 1fr;
+      }
+      li{
+        font-weight: bold;
+      }
+      #code{
+        border: 1px solid #e6e6e6;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><a href="index.html">CSS</a></h1>
+    <div id="grid">
+      <div id="contents">
+        <strong>CSS</strong><br>
+          ㄴ <a href="CSSex01.html">Exercise 01</a><br>
+          ㄴ <a href="CSSex02.html">Exercise 02</a><br>
+          ㄴ <a href="CSSex03.html">Exercise 03</a><br><br>
+        <strong>Box Model</strong><br>
+          ㄴ <a href="BOXMODELex01.html">Exercise 01</a><br>
+          ㄴ <a href="BOXMODELex02.html">Exercise 02</a><br>
+          ㄴ <a href="BOXMODELex03.html">Exercise 03</a><br>
+          ㄴ <a href="BOXMODELex04.html">Exercise 04</a><br>
+          ㄴ <a href="BOXMODELex05.html">Exercise 05</a><br>
+          ㄴ <a href="BOXMODELex06.html">Exercise 06</a><br><br>
+        <strong>Grid</strong><br>
+          ㄴ <a href="GRIDex01.html">Exercise 01</a><br><br>
+      </div>
+      <div id="details">
+        <h2>Box Model Exercise 05</h2>
+        <ul>
+          <li>코드는 중복을 싫어한다. 같은 스타일을 줄 것이라면, 태그를 묶어서 줄 수 있다.</li><br>
+          <div id="code">
+            <span style="font-style:italic"><font color="red">h3, a</font></span> {<br>
+              border-width:5px;<br>
+              border-color:red;<br>
+              border-style:solid;<br>
+            }<br>
+          </div><br>
+
+          <li>속성 안에서도 'border'가 중복되고 있는데, 이는 아래와 같이 간편하게 표현할 수 있다.</li><br>
+          <div id="code">
+            h3, a{<br>
+            <span style="font-style:italic"><font color="red">border:5px red solid;</font></span><br>
+              }<br>
+          </div><br>
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <style>
+      a{
+        color: black;
+        text-decoration: none;
+      }
+      body{
+        margin: 0;
+      }
+      h1{
+        font-size: 46px;
+        text-align: center;
+        border-bottom: 1px solid #bfbfbf;
+        padding: 20px;
+        margin: 0;
+      }
+      #contents{
+        border-right: 1px solid #bfbfbf;
+        width: 150px;
+        padding: 20px;
+      }
+      #details{
+        padding: 20px;
+        padding-left: 80px;
+      }
+      #grid{
+        display:grid;
+        grid-template-columns: 150px 1fr;
+      }
+      li{
+        font-weight: bold;
+      }
+      #code{
+        border: 1px solid #e6e6e6;
+        padding: 10px;
+      }
+      .blocklv{
+        border: 5px solid gray;
+      }
+      #bigdiv{
+        border: 5px solid pink;
+      }
+      #columns{
+        border: 5px solid pink;
+        display:grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #fr11{
+        border: 5px solid pink;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      #fr21{
+        border: 5px solid pink;
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><a href="index.html">CSS</a></h1>
+    <div id="grid">
+      <div id="contents">
+        <strong>CSS</strong><br>
+          ㄴ <a href="CSSex01.html">Exercise 01</a><br>
+          ㄴ <a href="CSSex02.html">Exercise 02</a><br>
+          ㄴ <a href="CSSex03.html">Exercise 03</a><br><br>
+        <strong>Box Model</strong><br>
+          ㄴ <a href="BOXMODELex01.html">Exercise 01</a><br>
+          ㄴ <a href="BOXMODELex02.html">Exercise 02</a><br>
+          ㄴ <a href="BOXMODELex03.html">Exercise 03</a><br>
+          ㄴ <a href="BOXMODELex04.html">Exercise 04</a><br>
+          ㄴ <a href="BOXMODELex05.html">Exercise 05</a><br>
+          ㄴ <a href="BOXMODELex06.html">Exercise 06</a><br><br>
+        <strong>Grid</strong><br>
+          ㄴ <a href="GRIDex01.html">Exercise 01</a><br><br>
+      </div>
+      <div id="details">
+        <h2>Grid Exercise 01</h2>
+        <ul>
+
+          <li>div는 block lebel element(cc. span은 inline element)다.<br><br>
+            <div class="blocklv">NAVIGATION</div>
+            <span class="blocklv">ARTICLE</span>
+          <br><br><br></li>
+
+          <li>NAVIGATION과 ARTICLE 두 div를 하나의 큰 div로 묶을 수 있다.<br><br>
+            <div id="bigdiv">
+              <div class="blocklv">NAVIGATION</div>
+              <div class="blocklv">ARTICLE</div>
+            </div>
+          <br><br></li>
+
+          <li>하나로 묶은 큰 div에 display:grid; 를 선언하고, grid-template-columns: 150px 1fr; 로 하면 구분된 두 영역이 column으로 배치되며, 왼쪽 칼럼의 width는 150px, 오른쪽 칼럼은 나머지 전체를 차지하게 된다.<br><br>
+            <div id="columns">
+              <div class="blocklv">NAVIGATION</div>
+              <div class="blocklv">ARTICLE</div>
+            </div>
+          <br><br></li>
+
+          <li>grid-template-columns: 1fr 1fr; 면 좌컬럼 우컬럼이 1:1로 나눠지고, 2fr 1fr이면 좌컬럼과 우컬럼이 2:1의 비율로 나뉘어진다.<br><br>
+            <div id="fr11">
+              <div class="blocklv">NAVIGATION</div>
+              <div class="blocklv">ARTICLE</div>
+            </div>
+            <br>
+            <div id="fr21">
+              <div class="blocklv">NAVIGATION</div>
+              <div class="blocklv">ARTICLE</div>
+            </div>
+          <br><br></li>
+
+      </div>
+    </div>
+  </body>
+
+</html>
